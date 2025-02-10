@@ -1,16 +1,12 @@
-@import "./utils/variables";
-@import "./base/common";
-@import "./components/header";
-@import "./popular-games";
-@import "./check-age";
-@import "./guess-number";
-@import "./rock-paper-scissors";
-@import "./calculator";
-@import "./age-calculator";
-@import "./google-dinosour";
-@import "./football";
-@import "./three-numbers";
-@import "./our-team";
-@import "./select-scientist";
-@import "./components/footer";
+@import "./common/base.scss";
+@import "./common/reset.scss";
+
+@import "./utils/mixins.scss";
+@import "./utils/placeholders.scss";
+@import "./utils/vars.scss";
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+
+
 
