@@ -1,12 +1,9 @@
-@import "./common/base.scss";
-@import "./common/reset.scss";
+@import "./utils/vars";
 
-@import "./utils/mixins.scss";
-@import "./utils/placeholders.scss";
-@import "./utils/vars.scss";
+@import "./base/common";
+@import "./base/reset";
 
-@import "./components/header.scss";
-@import "./components/footer.scss";
+@import "./utils/fonts";
 
-
-
+@import "./components/header";
+@import "./components/footer";
