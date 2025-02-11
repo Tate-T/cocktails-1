@@ -2,3 +2,19 @@
   font-family: "Poppins";
   font-weight: 700;
 }
+
+.container {
+  width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  outline: solid red;
+
+  @media screen and (min-width: 768px) {
+    width: 702px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1249px;
+  }
+}
