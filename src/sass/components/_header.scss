@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  // gap: 211px;
+  justify-content: space-around;
+  padding: 0 16px;
+  height: 63px;
+
+  &__box {
+    display: flex;
+    align-items: end;
+    gap: 43px;
+  }
+  &__logo {
+    width: 156px;
+    height: 43px;
+  }
+  &__nav {
+    display: flex;
+    gap: 60px;
+  }
+  &__link {
+    color: var(--Black, #202025);
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 133.3%;
+    letter-spacing: 0.36px;
+  }
+  &__form {
+    display: flex;
+    align-items: end;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+    &-btn {
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      background-color: #fff;
+      z-index: 2;
+      outline: 1px solid #fd5103;
+      border-radius: 4px 0px 0px 4px;
+    }
+    &-input {
+      outline: 1px solid #fd5103;
+      border-radius: 0px 4px 4px 0px;
+      padding: 8px;
+      width: 250px;
+      height: 40px;
+      color: #5f6775;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 171%;
+      letter-spacing: 0.28px;
+    }
+  }
+  &__theme {
+    display: flex;
+    gap: 8px;
+    align-items: end;
+
+    &-light,
+    &-dark {
+      color: #fd5103;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 133.3%; /* 133.333% */
+    }
+    &-dark{
+      color: #5F6775;
+    }
+    &-change{
+      width: 40px;
+      height: 20px;
+    }
+  }
+}
