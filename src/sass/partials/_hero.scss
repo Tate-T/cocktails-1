@@ -3,6 +3,15 @@
 }
 
 .hero {
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 77px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 89px;
+  }
 
   &__container {
     position: relative;
@@ -20,17 +29,20 @@
   }
 
   &__box {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    position: relative;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: left;
+    height: 610px;
     gap: 0px;
 
     @media screen and (min-width: 768px) {
       position: static;
       left: 0;
       transform: translate(0);
+      height: auto;
       gap: 40px;
       padding-top: 23px;
     }
@@ -47,7 +59,7 @@
     font-size: 22px;
     font-weight: 600;
     line-height: 42px;
-    margin: 0 0 365px 20px;
+    margin: 0 0 365px 80px;
 
     @media screen and (min-width: 768px) {
       margin: 0;
@@ -73,7 +85,7 @@
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0.28px;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 60px;
 
     @media screen and (min-width: 768px) {
       width: 324px;
@@ -156,8 +168,9 @@
   }
 
   &__dropdown {
+    position: relative;
     display: flex;
-    margin: 20px auto 0;
+    margin: 20px 0 0 50px;
     width: 93px;
     height: 34px;
     padding: 10px;
@@ -192,7 +205,7 @@
       top: 100%;
       left: 50%;
       transform: translate(-50%);
-      margin-top: 5px;
+      margin: 5px 0 0 0;
       overflow-y: auto;
       width: 93px;
       max-height: 84px;
