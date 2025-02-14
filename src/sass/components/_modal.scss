@@ -1,5 +1,5 @@
 .backdrop {
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,12 +56,23 @@
   }
   &__span {
     color: black;
+    transition: 500ms;
+
   }
   &__text {
     color: #5f6775;
     font-size: 16px;
     font-weight: 400;
     line-height: 162.5%;
+    transition: 500ms;
+
+  }
+  &__item:hover &__span{
+    color: #FD5103;
+  }
+  &__item:hover &__text{
+    color: #FD5103;
+
   }
   &__instructions {
     color: #000917;
@@ -94,6 +105,13 @@
     font-weight: 400;
     line-height: 120%; /* 120% */
     letter-spacing: 0.4px;
+
+    transition: 500ms;
+  }
+  &__btn:hover, &__btn:focus{
+    background-color: #fff;
+    color: #FD5103;
+    outline: solid #FD5103 1px;
   }
   &__close, &__icon{
     width: 25px;
