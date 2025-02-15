@@ -1,22 +1,37 @@
 <header class="header">
-    <svg class="header__logo">
-        <use href=""></use>
-    </svg>
-  <nav class="header__nav">
-    <a href="" class="header__link">Home</a>
-    <a href="" class="header__link">Favorite</a>
-  </nav>
+  <div class="header__box">
+    <a href="../../index.html" class="header__home">
+      <svg class="header__logo">
+        <use href="../../assets/icons/logo.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <nav class="header__nav">
+      <a href="" class="header__link">Home</a>
+      <a href="" class="header__link">Favorite</a>
+    </nav>
+  </div>
+
   <form class="header__form">
-    <input type="text" class="header__form-input" required/>
     <button type="submit" class="header__form-btn">
-        <svg class="header__icon">
-            <use href=""></use>
-        </svg>
+      <svg class="header__form-icon">
+        <use href="../../assets/icons/symbol-defs.svg#icon-search"></use>
+      </svg>
     </button>
+    <input
+      type="text"
+      class="header__form-input"
+      required
+      placeholder="Search"
+    />
   </form>
   <div class="header__theme">
     <p class="header__theme-light">light</p>
-    <input type="checkbox" class="header__theme-change" />
+    <label class="header__theme-label">
+      <input type="checkbox" class="header__theme-change" />
+      <span class="header__theme-slider"></span>
+    </label>
+
     <p class="header__theme-dark">dark</p>
   </div>
 </header>
