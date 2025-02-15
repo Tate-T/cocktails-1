@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  // gap: 211px;
+  justify-content: space-around;
+  padding: 0 16px;
+  height: 63px;
+
+  &__box {
+    display: flex;
+    align-items: end;
+    gap: 43px;
+  }
+  &__logo {
+    width: 156px;
+    height: 43px;
+  }
+  &__nav {
+    display: flex;
+    gap: 60px;
+  }
+  &__link {
+    color: var(--Black, #202025);
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 133.3%;
+    letter-spacing: 0.36px;
+  }
+  &__form {
+    display: flex;
+    align-items: end;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+    &-btn {
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      background-color: #fff;
+      z-index: 2;
+      outline: 1px solid #fd5103;
+      border-radius: 4px 0px 0px 4px;
+    }
+    &-input {
+      outline: 1px solid #fd5103;
+      border-radius: 0px 4px 4px 0px;
+      padding: 8px;
+      width: 250px;
+      height: 40px;
+      color: #5f6775;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 171%;
+      letter-spacing: 0.28px;
+    }
+  }
+  &__theme {
+    display: flex;
+    gap: 32px;
+    align-items: end;
+
+    &-label {
+      position: relative;
+    }
+    &-light,
+    &-dark {
+      color: #fd5103;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 133.3%; /* 133.333% */
+    }
+    &-dark {
+      color: #5f6775;
+    }
+    &-change {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    &-slider {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      bottom: 0;
+      left: -18px;
+
+      width: 40px;
+      height: 20px;
+
+      outline: solid 2px #fd5103;
+      cursor: pointer;
+      border-radius: 50px;
+      background-color: #ffffff;
+      transition: 0.3s;
+    }
+    &-slider::before {
+      content: "";
+
+      position: absolute;
+      left: 2px;
+      bottom: 1px;
+
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+
+      border-radius: 50%;
+      background-color: #fd5103;
+      transition: 0.3s;
+    }
+    &-change:checked + &-slider::before {
+      position: absolute;
+      right: 2px;
+      bottom: 1px;
+
+      width: 18px;
+      height: 18px;
+      transform: translateX(20px);
+      background-color: #fff;
+    }
+
+    &-change:checked + &-slider{
+      background-color: #fd5103;
+    }
+  }
+}
