@@ -1,4 +1,8 @@
-
+.is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
 
 .hero {
   margin-top: 60px;
@@ -33,13 +37,14 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
-    height: 610px;
+    height: 523px;
     gap: 0px;
 
     @media screen and (min-width: 768px) {
       position: static;
       left: 0;
       transform: translate(0);
+      align-items: baseline;
       height: auto;
       gap: 40px;
       padding-top: 23px;
@@ -175,9 +180,13 @@
     align-items: center;
     gap: 14px;
     border-radius: 4px;
+    background-color: #FFFFFF;
     border: 1px solid #fd5103;
+    z-index: 2;
     cursor: pointer;
     user-select: none;
+
+    transition: all 300ms ease-in-out;
 
     @media screen and (min-width: 768px) {
       display: none;
@@ -191,9 +200,23 @@
     }
 
     &--clicked {
-      width: 93px;
-      height: 44px;
       background: #FD5103;
+      transition: all 300ms ease-in-out;
+    }
+
+    &--active {
+      background-color: #FFFFFF; 
+      transition: all 300ms ease-in-out;
+  }
+
+    &--clicked &--selected {
+      width: 36px;
+      color: #FCFCFC;
+    }
+
+    &--active &--selected {
+      width: 37px;
+      color: #fd5103;
     }
 
     &--content {
@@ -202,14 +225,17 @@
       position: absolute;
       top: 100%;
       left: 50%;
-      transform: translate(-50%);
-      margin: 5px 0 0 0;
+      transform: translate(-50%, -34px);
+      z-index: 1;
+      max-height: 84px;
       overflow-y: auto;
       width: 93px;
-      max-height: 84px;
       border-radius: 4px;
       border: 1px solid #fd5103;
       background: white;
+
+      transition: all 500ms ease-out;
+
       scrollbar-width: thin;
       scrollbar-color: #5f6775 transparent;
 
@@ -225,6 +251,11 @@
       &::-webkit-scrollbar-thumb {
         background: transparent;
       }
+    }
+
+    &--clicked &--content {
+      opacity: 1;
+      transform: translate(-50%, 0);
     }
 
     &--item {
@@ -247,21 +278,6 @@
       align-items: center;
 
       transition: all 200ms ease-in-out;
-
-      &:hover,
-      &:focus {
-        color: #fe7031;
-        text-shadow: 0px 4px 4px rgba(95, 103, 117, 0.25);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #5f6775;
-      }
-    }
-
-    &--item:hover &--button, &--item:focus &--button {
-      color: #fe7031;
-      text-shadow: 0px 4px 4px rgba(95, 103, 117, 0.25);
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #5f6775;
     }
   }
 
@@ -273,6 +289,16 @@
   &__svg {
     width: 24px;
     height: 24px;
+
+    fill: #FD5103;
+  }
+
+  &__dropdown--clicked &__svg {
+    fill: #FFFFFF;
+  }
+
+  &__dropdown--active &__svg {
+    fill: #FD5103;
   }
 
   &__photo {
