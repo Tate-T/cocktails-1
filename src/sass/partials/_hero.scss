@@ -110,6 +110,8 @@
     width: 520px;
     gap: 0;
 
+    user-select: none;
+
     @media screen and (min-width: 768px) {
       display: flex;
       width: 324px;
