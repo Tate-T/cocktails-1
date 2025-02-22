@@ -43,7 +43,7 @@ document.addEventListener("click", e => {
 
     setTimeout(() => {
       target.classList.toggle("cocktails__add-favorite");
-    }, 750);
+    }, 500);
   }
 
   if (e.target.classList.contains("cocktails__add-favorite")) {
@@ -84,6 +84,6 @@ document.addEventListener("click", e => {
 
     setTimeout(() => {
       target.classList.toggle("cocktails__add-favorite");
-    }, 750);
+    }, 500);
   }
 });
