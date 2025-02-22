@@ -4,72 +4,133 @@
   transition: all 500ms ease-in-out;
 }
 
-.dark-mode .main {
+.dark-mode body {
   background: #202025;
-
-  transition: all 4000ms ease-in-out;
 }
 
 .dark-mode a {
-    color: #FCFCFC;
-
-    transition: all 500ms ease-in-out;
+  color: #fcfcfc;
 }
 
 .dark-mode p {
-    color: #FCFCFC;
-
-    transition: all 500ms ease-in-out;
+  color: #fcfcfc;
 }
 
 .dark-mode h2 {
-    color: #FCFCFC;
-
-    transition: all 500ms ease-in-out;
+  color: #fcfcfc;
 }
 
 .dark-mode h3 {
-    color: #FCFCFC;
-
-    transition: all 500ms ease-in-out;
+  color: #fcfcfc;
 }
 
 .dark-mode .header {
-    &__form {
-        &-input {
-            background-color: #202025;
-
-            transition: all 500ms ease-in-out;
-        }
-
-        &-btn {
-            background-color: #202025;
-
-            transition: all 500ms ease-in-out;
-        }
+  &__form {
+    &-input {
+      background-color: #202025;
     }
 
-    &__theme {
-        &-light {
-            color: #FCFCFC;
-
-            transition: all 500ms ease-in-out;
-        }
-
-        &-dark {
-            color: #FD5103;
-
-            transition: all 500ms ease-in-out;
-        }
-
-        &-slider {
-            outline: solid 2px #ffffff;
-        }
+    &-btn {
+      background-color: #202025;
     }
+  }
+
+  &__theme {
+    &-light {
+      color: #fcfcfc;
+    }
+
+    &-dark {
+      color: #fd5103;
+    }
+
+    &-slider {
+      outline: solid 2px #ffffff;
+    }
+  }
 }
 
 .dark-mode .cocktails__add-favorite--styles {
-    background-color: #202025;
+  background-color: #202025;
+}
 
-    transition: all 500ms ease-in-out;
+.dark-mode .cocktails__icon--white {
+  display: none;
+}
+
+.dark-mode .cocktails__icon--black {
+  display: block;
+}
+
+.dark-mode .previous-cocktail {
+  background: #202025;
+
+  @media screen and (min-width: 768px) {
+    border: 1px solid #4F4E4E;
+  }
+}
+
+.dark-mode .next-cocktail {
+  background: #202025;
+
+  @media screen and (min-width: 768px) {
+    border: 1px solid #4F4E4E;
+  }
+}
+
+.dark-mode .pagination__btn {
+  background: #202025;
+  border: 1px solid #4F4E4E;
+
+  &--active {
+    color: #202025;
+    background: #FE7031;
+
+    transition: 200ms;
+  }
+}
+
+.dark-mode .left-icon--empty {
+  fill: #4F4E4E;
+}
+
+.dark-mode .right-icon--empty {
+  fill: #4F4E4E;
+}
+
+.dark-mode .modal {
+  background-color: #202025;
+
+  &-mobile {
+    background-color: #202025;
+  }
+
+  &__title {
+    color: #FCFCFC;
+  }
+
+  &__subtitle {
+    color: #FCFCFC;
+  }
+
+  &__text {
+    color: #BDBDBD;
+  }
+
+  &__span {
+    color: #FCFCFC;
+  }
+
+  &__instructions {
+    color: #FCFCFC;
+  }
+
+  &__interesting {
+    color: #BDBDBD;
+  }
+
+  &__close {
+    background-color: #202025;
+    fill: #FCFCFC;
+  }
 }
