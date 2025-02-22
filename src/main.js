@@ -1,6 +1,6 @@
 import "normalize.css";
 
-// import "./js/components/header/header.js";
+import "./js/components/header/header.js";
 import "./js/components/modal/modal";
 import "./js/partials/hero/main-hero.js";
 import "./js/partials/favorite-cocktails/like-event";

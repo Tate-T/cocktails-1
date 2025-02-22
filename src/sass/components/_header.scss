@@ -44,22 +44,25 @@
       padding: 8px;
       background-color: #fff;
       z-index: 2;
-      outline: 1px solid #fd5103;
+      border: 1px solid #fd5103;
       border-radius: 4px 0px 0px 4px;
+
+      transition: border-color 50ms ease-in-out, background-color 500ms ease-in-out;
     }
 
     &-input {
-      outline: 1px solid #fd5103;
+      border: 1px solid #fd5103;
       border-radius: 0px 4px 4px 0px;
       padding: 8px;
       width: 250px;
       height: 40px;
       color: #5f6775;
-      font-family: Poppins;
       font-size: 14px;
       font-weight: 400;
       line-height: 171%;
       letter-spacing: 0.28px;
+
+      transition: border-color 50ms ease-in-out, background-color 500ms ease-in-out;
     }
   }
 
@@ -75,10 +78,11 @@
     &-light,
     &-dark {
       color: #fd5103;
-      font-family: Poppins;
       font-size: 18px;
       font-weight: 400;
-      line-height: 133.3%; /* 133.333% */
+      line-height: 133.3%;
+
+      transition: all 500ms ease-in-out;
     }
 
     &-dark {
