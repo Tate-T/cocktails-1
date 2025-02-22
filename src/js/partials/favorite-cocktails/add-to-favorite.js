@@ -1,7 +1,19 @@
 import axios from "axios";
 import _ from "lodash";
 
+const favoriteDrinksLocalStorage = JSON.parse(
+  localStorage.getItem("favorite-cocktails"),
+);
+
 const favoriteDrinks = [];
+
+if (favoriteDrinksLocalStorage !== null) {
+  if (favoriteDrinksLocalStorage.length !== 0) {
+    favoriteDrinksLocalStorage.forEach(el => {
+      favoriteDrinks.push(el);
+    });
+  }
+}
 
 document.addEventListener("click", async e => {
   setTimeout(async () => {
