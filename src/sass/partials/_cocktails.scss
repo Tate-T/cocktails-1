@@ -176,12 +176,22 @@
 
 .icon-frame {
   display: flex;
-  width: 345px;
-  height: 380px;
+  width: 288px;
+  height: 308px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 70px auto 0;
+  margin: 60px auto 0;
+
+  @media screen and (min-width: 768px) {
+    width: 345px;
+    height: 380px;
+    margin: 62px auto 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 70px auto 0;
+  }
 } 
 
 .pagination {
