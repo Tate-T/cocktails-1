@@ -2,7 +2,6 @@ import { getCocktails } from "../../services/get-cocktails-api";
 
 export const paginateCocktails = async (renderPage) => {
   let page = 1;
-
   const cocktailsFromDB = await getCocktails();
   const countPage = Math.ceil(cocktailsFromDB.length / 9);
 

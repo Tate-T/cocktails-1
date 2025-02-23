@@ -50,6 +50,52 @@
   }
 }
 
+.dark-mode .hero {
+  &__dropdown {
+    background-color: #FE7031;
+
+    &--selected {
+      color: #FCFCFC;
+    }
+
+    &--active {
+      background-color: #202025;
+    }
+
+    &--clicked {
+      background-color: #202025;
+    }
+
+    &--content {
+      background-color: #202025;
+    }
+  }
+
+  &__svg {
+    fill: #FCFCFC;
+  }
+
+  &__dropdown--selected {
+    color: #FCFCFC;
+  }
+
+  &__dropdown--clicked &__svg {
+    fill: #FD5103;
+  }
+
+  &__dropdown--active &__svg {
+    fill: #FCFCFC;
+  }
+}
+
+.dark-mode .hero__dropdown--clicked .hero__dropdown--selected {
+  color: #FD5103;
+}
+
+.dark-mode .hero__dropdown--clicked .hero__svg {
+  fill: #FD5103;
+}
+
 .dark-mode .cocktails__add-favorite--styles {
   background-color: #202025;
 }
