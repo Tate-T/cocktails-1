@@ -29,13 +29,13 @@ export const renderFromLocalStorage = () => {
             <h3 class="cocktails__subtitle">${cocktail.strDrink}</h3>
             <div class="cocktails__box">
               <button class="cocktails__learn-more">Learn more</button>
-              <button class="cocktails__add-favorite cocktails__add-favorite--styles">
-                <span>Add to</span>
+              <button class="cocktails__remove-favorite cocktails__add-favorite--styles">
+                <span>Remove</span>
                 <svg class="cocktails__icon cocktails__icon--white">
-                  <use href="../../assets/icons/symbol-defs.svg#icon-white-heart"></use>
+                  <use href="../../assets/icons/symbol-defs.svg#icon-full-heart"></use>
                 </svg>
                 <svg class="cocktails__icon cocktails__icon--black">
-                  <use href="../../assets/icons/symbol-defs.svg#icon-black-heart"></use>
+                  <use href="../../assets/icons/symbol-defs.svg#icon-full-heart"></use>
                 </svg>
               </button>
             </div>
@@ -45,9 +45,6 @@ export const renderFromLocalStorage = () => {
   
         list.insertAdjacentHTML("beforeend", html);
       });
-  
-      console.log(favoriteDrinks);
-  
       
       document.addEventListener("click", async e => {
         setTimeout(async () => {

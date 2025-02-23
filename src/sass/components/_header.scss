@@ -1,4 +1,24 @@
 .header {
+
+  &__modal{
+    &-open{
+      width: 30px;
+      height: 16px;
+    }
+    &-btn{
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+
+      @media screen and (min-width: 1280px) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
   display: flex;
   // gap: 211px;
   justify-content: space-around;
@@ -17,8 +37,13 @@
   }
 
   &__nav {
-    display: flex;
-    gap: 60px;
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 60px;
+
+    }
   }
 
   &__link {
@@ -30,9 +55,13 @@
   }
 
   &__form {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
     align-items: end;
 
+    }
     &-icon {
       width: 24px;
       height: 24px;
@@ -67,10 +96,14 @@
   }
 
   &__theme {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
     gap: 32px;
     align-items: end;
 
+    }
     &-label {
       position: relative;
     }
