@@ -1,8 +1,6 @@
-import { renderCocktails } from "../../partials/favorite-cocktails/render-favorite";
-import { updateIcons } from "../../partials/favorite-cocktails/update-icons";
+import { updateIcons } from "../../partials/cocktails/update-icons"; 
 
 export const toggleTheme = () => {
-  const list = document.querySelector(".cocktails");
   const themeChanger = document.querySelector(".header__theme-change");
   const heroSourcesArr = document.querySelectorAll("source");
 
@@ -18,9 +16,6 @@ export const toggleTheme = () => {
       }
     });
 
-    list.innerHTML = "";
-
-    renderCocktails();
     updateIcons();
   });
 
