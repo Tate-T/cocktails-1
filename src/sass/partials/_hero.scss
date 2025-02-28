@@ -1,9 +1,8 @@
 .is-hidden {
   display: none;
   visibility: hidden;
-  opacity: 0;
+  z-index: -1;
 }
-
 .hero {
   margin-bottom: 40px;
 
