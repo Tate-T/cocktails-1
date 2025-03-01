@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktails</title>
+    <script>
+      (function applyThemeEarly() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-mode");
+        } else {
+          document.documentElement.classList.remove("dark-mode");
+        }
+      })();
+    </script>
+    <link rel="icon" href="/cocktails-1/assets/favicon-ec720e1e.ico" type="image/x-icon" />
+    
+    <script type="module" crossorigin src="/cocktails-1/assets/header-29e41c2a.js"></script>
+    <script type="module" crossorigin src="/cocktails-1/assets/favorite-16dba6d3.js"></script>
+    <link rel="stylesheet" href="/cocktails-1/assets/favorite-5d63c8f9.css">
+  </head>
+  <body>
+    <div class="backdrop is-hidden">
+  <div class="modal-mobile">
+    <h3 class="modal__title">Negroni</h3>
+    <h4 class="modal__instructions">INSTRUCTIONS</h4>
+    <p class="modal__interesting">Add the gin, Campari and sweet vermouth to a mixing glass filled with ice, and stir until well-chilled. Strain into a rocks glass filled with large ice cubes. Garnish with an orange peel.</p>
+    <img src="#" alt="" class="modal__img" />
+    <h4 class="modal__subtitle">INGRIDIENTS</h4>
+        <h5 class="modal__descr">Per cocktail</h5>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+        </ul>
+    <button class="modal__btn">Add to favorite</button>
+        <button class="modal__close">
+          <svg class="modal__icon">
+              <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+      </button>
+  </div>
+  <div class="modal">
+    
+    <div class="modal__box">
+      <img src="#" alt="" class="modal__img" />
+      <div class="modal__small-box">
+        <h3 class="modal__title">Negroni</h3>
+        <h4 class="modal__subtitle">INGRIDIENTS</h4>
+        <h5 class="modal__descr">Per cocktail</h5>
+        <ul class="modal__list">
+          <li class="modal__item modal__item1">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item modal__item1">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item modal__item1">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item modal__item1">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+          <li class="modal__item modal__item1">
+            <p class="modal__text"><span class="modal__span">&#10038;</span> ddd</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal__info-box">
+      <h4 class="modal__instructions">INSTRUCTIONS</h4>
+    <p class="modal__interesting">Add the gin, Campari and sweet vermouth to a mixing glass filled with ice, and stir until well-chilled. Strain into a rocks glass filled with large ice cubes. Garnish with an orange peel.</p>
+    <button class="modal__btn">Add to favorite</button>
+    
+    </div>
+    <button class="modal__close">
+      <svg class="modal__icon">
+          <use xlink:href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+      </svg>
+  </button>
+  </div>
+</div>
+
+
+    <header class="header">
+  <div class="header__box">
+    <a href="../../index.html" class="header__home">
+      <svg class="header__logo">
+        <use xlink:href="../../assets/icons/logo.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <nav class="header__nav">
+      <a href="../../index.html" class="header__link">Home</a>
+      <p class="header__link">
+        <span class="header__nav-span">Favorite</span>
+        <ul class="header__nav-list is-hidden">
+          <li class="header__nav-item">
+            <a class="header__nav-text" href="../../favorite.html">Favorite cocktails</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-text" href="../../ingridients.html">Favorite ingredients</a>
+          </li>
+        </ul>
+      </p>
+    </nav>
+  </div>
+
+  <form class="header__form">
+    <button type="submit" class="header__form-btn">
+      <svg class="header__form-icon">
+        <use xlink:href="../../assets/icons/symbol-defs.svg#icon-search"></use>
+      </svg>
+    </button>
+    <input
+      type="text"
+      class="header__form-input"
+      required
+      placeholder="Search"
+    />
+  </form>
+  <div class="header__theme">
+    <p class="header__theme-light">Light</p>
+    <label class="header__theme-label">
+      <input type="checkbox" class="header__theme-change" />
+      <span class="header__theme-slider"></span>
+    </label>
+
+    <p class="header__theme-dark">Dark</p>
+  </div>
+  <button class="header__modal-btn" type="button">
+    <svg class="header__modal-open">
+      <use href="../../assets/icons/symbol-defs.svg#icon-menu"></use>
+    </svg>
+  </button>
+</header>
+
+<div class="header__modal is-hidden">
+  <div class="header__modal-tablet">
+    <a href="../../index.html" class="header__home">
+      <svg class="header__logo">
+        <use href="../../assets/icons/logo.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="header__theme">
+      <p class="header__theme-light">Light</p>
+      <label class="header__theme-label">
+        <input type="checkbox" class="header__theme-change" />
+        <span class="header__theme-slider"></span>
+      </label>
+
+      <p class="header__theme-dark">Dark</p>
+    </div>
+    <button class="modal__header-close">
+      <svg class="modal__icon">
+        <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header__modal-mobile">
+    <div class="header__theme">
+      <p class="header__theme-light">Light</p>
+      <label class="header__theme-label">
+        <input type="checkbox" class="header__theme-change" />
+        <span class="header__theme-slider"></span>
+      </label>
+
+      <p class="header__theme-dark">Dark</p>
+    </div>
+    <button class="modal__header-close">
+      <svg class="modal__icon">
+        <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <form class="header__form">
+    <button type="submit" class="header__form-btn">
+      <svg class="header__form-icon">
+        <use href="../../assets/icons/symbol-defs.svg#icon-search"></use>
+      </svg>
+    </button>
+    <input
+      type="text"
+      class="header__form-input"
+      required
+      placeholder="Search"
+    />
+  </form>
+  <nav class="header__nav">
+    <a href="../../index.html" class="header__link">Home</a>
+    <a href="../../favorite.html" class="header__link"
+      >Favorite
+      <span class="header__mobile-span">
+        <svg class="header__modal-icon">
+          <use
+            href="../../assets/icons/dropdown-arrow.svg#mdi-light:chevron-down"
+          ></use>
+        </svg> </span
+    ></a>
+  </nav>
+</div>
+
+    <main class="main">
+      <section class="favorite">
+  <div class="container">
+    <h2 class="favorite__title">Favorite cocktails</h2>
+
+    <ul class="cocktails">
+    </ul>
+  </div>
+</section>
+
+      <div class="pagination-box">
+  <button class="previous-cocktail">
+    <svg class="left-icon left-icon--empty">
+      <use href="../../assets/icons/arrow.svg#icon-arrow"></use>
+    </svg>
+  </button>
+
+  <ul class="pagination"></ul>
+
+  <button class="next-cocktail">
+    <svg class="right-icon">
+      <use href="../../assets/icons/arrow.svg#icon-arrow"></use>
+    </svg>
+  </button>
+</div>
+
+    </main>
+    <footer class="footer"></footer>
+
+    
+  </body>
+</html>
