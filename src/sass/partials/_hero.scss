@@ -1,8 +1,13 @@
-.is-hidden {
-  display: none;
+.is-hidden-dropdown {
+  opacity: 0;
   visibility: hidden;
   z-index: -1;
 }
+
+.is-hidden {
+  display: none;
+}
+
 .hero {
   margin-bottom: 40px;
 
@@ -175,7 +180,7 @@
   &__dropdown {
     position: relative;
     display: flex;
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 55px;
     width: 93px;
     height: 34px;
     padding: 10px;

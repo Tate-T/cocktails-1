@@ -14,17 +14,17 @@ export const clickDropdown = () => {
                 dropdownEl.classList.remove("hero__dropdown--active");
             } else if (clickCounter === 2) {
                 dropdownEl.classList.add("hero__dropdown--active");
-                dropdownContentEl.classList.remove("is-hidden");  
+                dropdownContentEl.classList.remove("is-hidden-dropdown");  
                 dropdownBoxEl.style.height = "605px"; 
             } else if (clickCounter === 3) {
                 dropdownEl.classList.remove("hero__dropdown--clicked", "hero__dropdown--active");
-                dropdownContentEl.classList.add("is-hidden");
+                dropdownContentEl.classList.add("is-hidden-dropdown");
                 dropdownBoxEl.style.height = "auto";
                 clickCounter = 0;
             }
         } else {
             dropdownEl.classList.remove("hero__dropdown--clicked", "hero__dropdown--active");
-            dropdownContentEl.classList.add("is-hidden");
+            dropdownContentEl.classList.add("is-hidden-dropdown");
             dropdownBoxEl.style.height = "auto";
             clickCounter = 0;
         }

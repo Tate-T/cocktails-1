@@ -1,4 +1,5 @@
 import axios from "axios";
+import { noConflict } from "lodash";
 
 export const getSearchedLetterCocktailsAPI = async (searchedLetter) => {
   try {

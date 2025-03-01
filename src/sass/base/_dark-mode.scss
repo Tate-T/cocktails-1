@@ -65,6 +65,10 @@
       outline: solid 2px #ffffff;
     }
   }
+
+  &__modal-open {
+    fill: #fcfcfc;
+  }
 }
 
 .dark-mode .header__nav-item:hover .header__nav-text {
