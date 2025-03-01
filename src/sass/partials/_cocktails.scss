@@ -301,6 +301,11 @@
     left: 3px;
 
     fill: #D7D7D7;
+
+    @media screen and (min-width: 768px) {
+      top: 8px;
+      left: 14px;
+    }
   }
 }
 
@@ -350,5 +355,10 @@
     left: 4px;
 
     fill: #D7D7D7;
+
+    @media screen and (min-width: 768px) {
+      top: 6px;
+      left: 17px;
+    }
   }
 }
