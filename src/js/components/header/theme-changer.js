@@ -1,11 +1,49 @@
 import { updateIcons } from "../../partials/cocktails/update-icons"; 
 
+export const isDarkMode = () => document.documentElement.classList.contains("dark-mode");
+
+const changeFromLocalStorage = () => {
+  if (isDarkMode()) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+};
+
+const updateThemeSwitch = () => {
+  const themeChanger = document.querySelector(".header__theme-change");
+
+  if (themeChanger) {
+    const isDark = isDarkMode();
+    themeChanger.checked = isDark;
+  }
+};
+
+const applyThemeOnLoad = () => {
+  const savedTheme = localStorage.getItem("theme");
+  // document.documentElement.classList.add("no-transition");
+
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark-mode");
+  } else {
+    document.documentElement.classList.remove("dark-mode");
+  }
+
+  // setTimeout(() => {
+  //   document.documentElement.classList.remove("no-transition");
+  // }, 0);
+
+  updateThemeSwitch();
+};
+
 export const toggleTheme = () => {
   const themeChanger = document.querySelector(".header__theme-change");
   const heroSourcesArr = document.querySelectorAll("source");
 
   themeChanger.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+    document.documentElement.classList.toggle("dark-mode");
+    changeFromLocalStorage();
+
     heroSourcesArr.forEach(source => {
       if (source.media.includes("1280px")) {
         source.srcset = "../../assets/images/desktop/dark-mode-fresh.webp";
@@ -22,4 +60,4 @@ export const toggleTheme = () => {
   updateIcons();
 };
 
-export const isDarkMode = () => document.body.classList.contains("dark-mode");
+applyThemeOnLoad();
