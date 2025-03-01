@@ -7,7 +7,7 @@ export const closeModal = () => {
       document.body.classList.remove("no-scroll");
     });
   });
-  const closeItemArr = document.querySelectorAll('.modal__item1');
+  const closeItemArr = document.querySelectorAll('.modal__item');
   closeItemArr.forEach(item => {
     item.addEventListener("click", () => {
       backdrop.classList.add("is-hidden");

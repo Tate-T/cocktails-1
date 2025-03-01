@@ -53,3 +53,9 @@ h2 {
 h3 {
   transition: all 500ms ease-in-out;
 }
+
+.is-hidden{
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+}
