@@ -27,8 +27,6 @@ export const clickListButton = () => {
                 titleEl.textContent = "Searching results";
                 
                 paginationBoxEl.classList.add("is-hidden");
-                
-                console.log(data);
 
                 renderCocktails(data.drinks);
             }
