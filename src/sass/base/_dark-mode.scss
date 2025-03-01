@@ -25,13 +25,30 @@
 }
 
 .dark-mode .header {
+  &__nav {
+    &-list {
+      background-color: #202025;
+      outline: solid 1px #fcfcfc;
+    }
+
+    &-item {
+      &:first-child {
+        border-bottom: 1px #fcfcfc solid;
+      }
+    }
+  }
+
   &__form {
     &-input {
       background-color: #202025;
+
+      transition: all 400ms ease-in-out;
     }
 
     &-btn {
       background-color: #202025;
+
+      transition: all 400ms ease-in-out;
     }
   }
 
@@ -48,6 +65,10 @@
       outline: solid 2px #ffffff;
     }
   }
+}
+
+.dark-mode .header__nav-item:hover .header__nav-text {
+  color: #202025;
 }
 
 .dark-mode .hero {

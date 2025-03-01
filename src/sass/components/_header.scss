@@ -1,9 +1,20 @@
 .header {
+  display: flex;
+  // gap: 211px;
+  justify-content: space-around;
+  padding: 0 16px;
+  height: 63px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+
   &__modal {
     &-open {
       width: 30px;
       height: 16px;
     }
+
     &-btn {
       background-color: transparent;
       display: flex;
@@ -14,15 +25,6 @@
       }
     }
   }
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 60px;
-  }
-  display: flex;
-  // gap: 211px;
-  justify-content: space-around;
-  padding: 0 16px;
-  height: 63px;
 
   &__box {
     display: flex;
@@ -49,14 +51,27 @@
       top: 30px;
       left: 120px;
       width: 210px;
+
+      transition: all 500ms ease-in-out;
     }
+
     &-item {
       padding: 12px;
-      border-bottom: 1px #fd5103 solid;
+      cursor: pointer;
 
-      // &:first-child{
-      // }
+      transition: all 500ms ease-in-out;
+
+      &:first-child {
+        border-bottom: 1px #fd5103 solid;
+      }
+
+      &:hover, &:focus {
+        background-color: #fd5103;
+
+        transition: all 200ms ease-in-out;
+      }
     }
+    
     &-text {
       color: #000;
 
@@ -64,6 +79,14 @@
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0.36px;
+
+      transition: all 500ms ease-in-out;
+    }
+
+    &-item:hover &-text {
+      color: #fff;
+
+      transition: all 200ms ease-in-out;
     }
 
     @media screen and (min-width: 1280px) {
@@ -102,8 +125,7 @@
       border: 1px solid #fd5103;
       border-radius: 4px 0px 0px 4px;
 
-      transition: border-color 50ms ease-in-out,
-        background-color 500ms ease-in-out;
+      transition: border-color 50ms ease-in-out, background-color 500ms ease-in-out;
     }
 
     &-input {
@@ -176,7 +198,7 @@
       content: "";
 
       position: absolute;
-      left: 2px;
+      left: 1px;
       bottom: 1px;
 
       width: 18px;
