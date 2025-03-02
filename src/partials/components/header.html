@@ -50,67 +50,78 @@
   </button>
 </header>
 
-<div class="header__modal is-hidden">
+<div class="header__modal is-hidden" >
   <div class="header__modal-tablet">
-    <a href="./index.html" class="header__home">
-      <svg class="header__logo">
+
+    <a href="./index.html" class="header__modal__home">
+      <svg class="header__modal__logo">
         <use href="./assets/icons/logo.svg#icon-logo"></use>
-      </svg>
     </a>
-    <div class="header__theme">
-      <p class="header__theme-light">Light</p>
-      <label class="header__theme-label">
-        <input type="checkbox" class="header__theme-change" />
-        <span class="header__theme-slider"></span>
+    <div class="header__modal__theme">
+      <p class="header__modal__theme-light">Light</p>
+      <label class="header__modal__theme-label">
+        <input type="checkbox" class="header__modal__theme-change header__theme-change" />
+        <span class="header__modal__theme-slider"></span>
       </label>
 
-      <p class="header__theme-dark">Dark</p>
+      <p class="header__modal__theme-dark">Dark</p>
     </div>
-    <button class="modal__header-close">
+    <button class="header__modal-close">
       <svg class="modal__icon">
         <use href="./assets/icons/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
   </div>
   <div class="header__modal-mobile">
-    <div class="header__theme">
-      <p class="header__theme-light">Light</p>
-      <label class="header__theme-label">
-        <input type="checkbox" class="header__theme-change" />
-        <span class="header__theme-slider"></span>
+    <div class="header__modal__theme">
+      <p class="header__modal__theme-light">Light</p>
+      <label class="header__modal__theme-label">
+        <input type="checkbox" class="header__modal__theme-change header__theme-change" />
+        <span class="header__modal__theme-slider"></span>
       </label>
 
-      <p class="header__theme-dark">Dark</p>
+      <p class="header__modal__theme-dark">Dark</p>
     </div>
-    <button class="modal__header-close">
-      <svg class="modal__icon">
+
+
+    <button class="header__modal-close">
+      <svg class="header__modal-icon">
         <use href="./assets/icons/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
   </div>
-  <form class="header__form">
-    <button type="submit" class="header__form-btn">
-      <svg class="header__form-icon">
+  <form class="header__modal__form">
+    <button type="submit" class="header__modal__form-btn">
+      <svg class="header__modal__form-icon">
         <use href="./assets/icons/symbol-defs.svg#icon-search"></use>
       </svg>
     </button>
     <input
       type="text"
-      class="header__form-input"
+      class="header__modal__form-input header__form-input"
       required
       placeholder="Search"
     />
   </form>
-  <nav class="header__nav">
-    <a href="./index.html" class="header__link">Home</a>
-    <a href="./favorite.html" class="header__link"
-      >Favorite
-      <span class="header__mobile-span">
-        <svg class="header__modal-icon">
-          <use
-            href="./assets/icons/dropdown-arrow.svg#mdi-light:chevron-down"
-          ></use>
-        </svg> </span
-    ></a>
+
+
+  <nav class="header__modal__nav">
+    <a href="./index.html" class="header__modal__link">Home</a>
+    <p class="header__modal__link">
+      <span class="header__modal__nav-span">Favorite  <span class="header__nav-icon">
+        <svg class="header__arrow">
+          <use class="header__arrow-use" href="../../assets/icons/arrow.svg#icon-arrow"></use>
+        </svg>
+      </span></span>
+      <ul class="header__modal__nav-list is-hidden">
+        <li class="header__nav-item">
+          <a class="header__nav-text" href="../../favorite.html">Favorite cocktails</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-text" href="../../ingridients.html">Favorite ingredients</a>
+        </li>
+      </ul>
+    </p>
+
   </nav>
 </div>

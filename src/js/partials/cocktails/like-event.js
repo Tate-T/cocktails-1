@@ -89,5 +89,4 @@ export const likeCocktail = () => {
       }, 500);
     }
   });
-  
 }
