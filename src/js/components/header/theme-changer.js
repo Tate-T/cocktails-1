@@ -1,5 +1,9 @@
 import { updateIcons } from "../../partials/cocktails/update-icons"; 
 
+import imgMobile from "../../../assets/images/mobile/dark-mode-fresh.webp";
+import imgTablet from "../../../assets/images/tablet/dark-mode-fresh.webp";
+import imgDesktop from "../../../assets/images/desktop/dark-mode-fresh.webp";
+
 export const isDarkMode = () => document.documentElement.classList.contains("dark-mode");
 
 const changeFromLocalStorage = () => {
@@ -24,17 +28,12 @@ const updateThemeSwitch = () => {
 
 const applyThemeOnLoad = () => {
   const savedTheme = localStorage.getItem("theme");
-  // document.documentElement.classList.add("no-transition");
 
   if (savedTheme === "dark") {
     document.documentElement.classList.add("dark-mode");
   } else {
     document.documentElement.classList.remove("dark-mode");
   }
-
-  // setTimeout(() => {
-  //   document.documentElement.classList.remove("no-transition");
-  // }, 0);
 
   updateThemeSwitch();
 };
@@ -50,11 +49,11 @@ export const toggleTheme = () => {
   
       heroSourcesArr.forEach(source => {
         if (source.media.includes("1280px")) {
-          source.srcset = "./assets/images/desktop/dark-mode-fresh.webp";
+          source.srcset = imgDesktop;
         } else if (source.media.includes("768px")) {
-          source.srcset = "./assets/images/tablet/dark-mode-fresh.webp";
+          source.srcset = imgTablet;
         } else {
-          source.srcset = "./assets/images/mobile/dark-mode-fresh.webp";
+          source.srcset = imgMobile;
         }
       });
   
