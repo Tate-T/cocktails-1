@@ -1,4 +1,4 @@
-const renderIconsLocalStorage = () => {
+export const renderIconsLocalStorage = () => {
   const favoriteDrinksLocalStorage = JSON.parse(
     localStorage.getItem("favorite-cocktails"),
   );
