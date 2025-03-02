@@ -1,15 +1,13 @@
-import axios from "axios";
-import { noConflict } from "lodash";
-
-export const getSearchedLetterCocktailsAPI = async (searchedLetter) => {
+export const getSearchedLetterCocktailsAPI = async searchedLetter => {
   try {
-    const response = await axios.get(
-      `https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${searchedLetter}`
-    );
-    const allDrinks = response.data.drinks || [];
+    const response = await fetch(
+      `https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${searchedLetter}`,
+    ).then(res => res.json());
+
+    const allDrinks = response.drinks || [];
 
     const nonAlcoholicDrinks = allDrinks.filter(
-      (drink) => drink.strAlcoholic === "Non alcoholic"
+      drink => drink.strAlcoholic === "Non alcoholic",
     );
 
     return { drinks: nonAlcoholicDrinks };
