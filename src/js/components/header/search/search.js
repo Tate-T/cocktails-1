@@ -5,7 +5,7 @@ import { getByName } from "../../../services/get-cocktail-name-api";
 import iconsURL from "../../../../assets/icons/symbol-defs.svg";
 
 const searchByName = () => {
-  const inputArr = document.querySelector(".header__form-input");
+  const inputArr = document.querySelectorAll(".header__form-input");
   const list = document.querySelector(".cocktails");
   const paginationBox = document.querySelector(".pagination-box");
   inputArr.forEach(input => {
