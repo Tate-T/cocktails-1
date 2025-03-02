@@ -1,0 +1,162 @@
+body{
+  height: 100%;
+}
+
+main{
+  flex: 1;
+}
+
+.ingredients{
+ min-height: 75vh;
+}
+
+.ingredients__title {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 69px;
+
+    @media screen and (min-width: 768px) {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 69px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 700;
+      margin-top: 69px;
+      }
+  }
+  
+  .ingredients__cards-title {
+    color: var(--Black, #202025);
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 28px;
+
+    @media screen and (min-width:1200px){
+      font-size: 32px;
+    }
+  }
+  
+  .ingredients__cards-subtitle {
+    color: var(--Gray, #5f6775);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 1200px){
+      font-size: 16px;
+    }
+  }
+  
+  .ingredients__button-more {
+    width: 108px;
+  height: 39px;
+    border-radius: 4px;
+    background: var(--Auxiliary-orange, #fe7031);
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+
+    @media screen and (min-width: 1200px){
+      font-size: 20px;
+      padding: 12px 27px;
+    }
+
+    @media screen and (min-width: 1200px){
+      font-size: 20px;
+      width: 182px;
+      height: 48px;
+    }
+  }
+  
+  .ingredients__button-remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px 7px 10px;
+    gap: 7px;
+    border-radius: 4px;
+    border: 1px solid var(--Grapefruit, #fd5103);
+    background: var(--White, #fcfcfc);
+    color: var(--Grapefruit, #fd5103);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+
+    @media screen and (min-width: 1200px){
+      padding: 12px 18px;
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 768px){
+      
+      font-size: 20px;
+    }
+  }
+  
+  .ingredients__cards {
+    height: auto;
+    flex-shrink: 0;
+    border: 1px solid var(--Grapefruit, #fd5103);
+    padding: 20px 20px 20px 20px;
+
+    @media screen and (min-width: 768px){
+      padding: 20px 20px 20px 20px;
+    }
+
+    @media screen and (min-width: 1200px){
+      padding: 30px 28px 25px 28px;
+    }
+  }
+  
+  .ingredients__list {
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+    width: 101%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .ingredients__button-box {
+    display: flex;
+    gap: 16px;
+  }
+
+  .ingredients__icon{
+    width: 18px;
+    height: 18px;   
+
+    @media screen and (min-width: 768px) {
+      width: 21px;
+      height: 19px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 21px;
+      height: 19px; 
+    }
+  }
+  
+  

@@ -1,5 +1,9 @@
 import { updateIcons } from "../../partials/cocktails/update-icons"; 
 
+import imgMobile from "../../../assets/images/mobile/dark-mode-fresh.webp";
+import imgTablet from "../../../assets/images/tablet/dark-mode-fresh.webp";
+import imgDesktop from "../../../assets/images/desktop/dark-mode-fresh.webp";
+
 export const isDarkMode = () => document.documentElement.classList.contains("dark-mode");
 
 const changeFromLocalStorage = () => {
@@ -43,22 +47,20 @@ export const toggleTheme = () => {
   const themeChangerArr = document.querySelectorAll(".header__theme-change");
   const heroSourcesArr = document.querySelectorAll("source");
 
-  themeChangerArr.forEach(themeChanger => {
-    themeChanger.addEventListener("click", () => {
-      document.documentElement.classList.toggle("dark-mode");
-      changeFromLocalStorage();
-  
-      heroSourcesArr.forEach(source => {
-        if (source.media.includes("1280px")) {
-          source.srcset = "../../assets/images/desktop/dark-mode-fresh.webp";
-        } else if (source.media.includes("768px")) {
-          source.srcset = "../../assets/images/tablet/dark-mode-fresh.webp";
-        } else {
-          source.srcset = "../../assets/images/mobile/dark-mode-fresh.webp";
-        }
-      });
-  
-      updateIcons();
+
+
+  themeChanger.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark-mode");
+    changeFromLocalStorage();
+
+    heroSourcesArr.forEach(source => {
+      if (source.media.includes("1280px")) {
+        source.srcset = `${imgDesktop}`;
+      } else if (source.media.includes("768px")) {
+        source.srcset = `${imgTablet}`;
+      } else {
+        source.srcset = `${imgMobile}`;
+      }
     });
   });
   

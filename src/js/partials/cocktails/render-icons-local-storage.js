@@ -1,4 +1,6 @@
-const renderIconsLocalStorage = () => {
+import iconsURL from "../../../assets/icons/symbol-defs.svg";
+
+export const renderIconsLocalStorage = () => {
   const favoriteDrinksLocalStorage = JSON.parse(
     localStorage.getItem("favorite-cocktails"),
   );
@@ -20,14 +22,14 @@ const renderIconsLocalStorage = () => {
 
               whiteIcon.children[0].setAttribute(
                 "href",
-                "../../../assets/icons/symbol-defs.svg#icon-full-heart",
+                `${iconsURL}#icon-full-heart`,
               );
 
               const blackIcon = btn.querySelector(".cocktails__icon--black");
 
               blackIcon.children[0].setAttribute(
                 "href",
-                "../../../assets/icons/symbol-defs.svg#icon-full-heart",
+                `${iconsURL}#icon-full-heart`,
               );
 
               setTimeout(() => {

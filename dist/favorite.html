@@ -17,9 +17,11 @@
     </script>
     <link rel="icon" href="/cocktails-1/assets/favicon-ec720e1e.ico" type="image/x-icon" />
     
-    <script type="module" crossorigin src="/cocktails-1/assets/header-29e41c2a.js"></script>
-    <script type="module" crossorigin src="/cocktails-1/assets/favorite-16dba6d3.js"></script>
-    <link rel="stylesheet" href="/cocktails-1/assets/favorite-5d63c8f9.css">
+    <script type="module" crossorigin src="/cocktails-1/assets/favorite-55f015fe.js"></script>
+    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/header-8ff54bb5.js">
+    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/modal-154b7bd3.js">
+    <link rel="stylesheet" href="/cocktails-1/assets/header-9d9ae4af.css">
+    <link rel="stylesheet" href="/cocktails-1/assets/favorite-57db942a.css">
   </head>
   <body>
     <div class="backdrop is-hidden">
@@ -50,7 +52,7 @@
     <button class="modal__btn">Add to favorite</button>
         <button class="modal__close">
           <svg class="modal__icon">
-              <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+              <use href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-close"></use>
           </svg>
       </button>
   </div>
@@ -89,41 +91,84 @@
     </div>
     <button class="modal__close">
       <svg class="modal__icon">
-          <use xlink:href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+          <use xlink:href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-close"></use>
       </svg>
   </button>
+  </div>
+</div>
+
+    <div class="ingredients-backdrop backdrop is-hidden">
+  <div class="ingredients-modal">
+    <div class="modal__box ingredients-modal__box">
+      <h3 class="modal__title ingredients-modal__title">Negroni</h3>
+      <h4 class="modal__subtitle ingredients-modal__subtitle">Liqueur</h4>
+    </div>
+    <div class="modal__info-box ingredients-modal__info-box">
+      <p class="modal__interesting ingredients-modal__interesting">
+        Campari is an Italian alcoholic liqueur, considered an apéritif (20.5%, 21%, 24%, 25%, or 28.5% ABV, depending on the country in which it is sold), obtained from the infusion of herbs and fruit (including chinotto and cascarilla) in alcohol and water. It is a bitters, characterised by its dark red colour.
+      </p>
+
+      <ul class="modal__list ingredients-modal__list">
+        <li class="modal__item ingredients-modal__item">
+          <p class="modal__text ingredients-modal__text">
+            <span class="modal__span ingredients-modal__span">&#10038;</span> ddd
+          </p>
+        </li>
+        <li class="modal__item ingredients-modal__item">
+          <p class="modal__text ingredients-modal__text">
+            <span class="modal__span ingredients-modal__span">&#10038;</span> ddd
+          </p>
+        </li>
+        <li class="modal__item ingredients-modal__item">
+          <p class="modal__text ingredients-modal__text">
+            <span class="modal__span ingredients-modal__span">&#10038;</span> ddd
+          </p>
+        </li>
+        <li class="modal__item ingredients-modal__item">
+          <p class="modal__text ingredients-modal__text">
+            <span class="modal__span ingredients-modal__span">&#10038;</span> ddd
+          </p>
+        </li>
+       
+      </ul>
+      <button class="modal__btn ingredients-modal__btn">Add to favorite</button>
+    </div>
+    <button class="modal__close ingredients-modal__close">
+      <svg class="modal__icon ingredients-modal__icon">
+        <use xlink:href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-close"></use>
+      </svg>
+    </button>
   </div>
 </div>
 
 
     <header class="header">
   <div class="header__box">
-    <a href="../../index.html" class="header__home">
+    <a href="./index.html" class="header__home">
       <svg class="header__logo">
-        <use xlink:href="../../assets/icons/logo.svg#icon-logo"></use>
+        <use xlink:href="/cocktails-1/assets/logo-b8f608ff.svg#icon-logo"></use>
       </svg>
     </a>
 
     <nav class="header__nav">
-      <a href="../../index.html" class="header__link">Home</a>
+      <a href="./index.html" class="header__link">Home</a>
       <p class="header__link">
         <span class="header__nav-span">Favorite</span>
         <ul class="header__nav-list is-hidden">
           <li class="header__nav-item">
-            <a class="header__nav-text" href="../../favorite.html">Favorite cocktails</a>
+            <a class="header__nav-text" href="./favorite.html">Favorite cocktails</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-text" href="../../ingridients.html">Favorite ingredients</a>
+            <a class="header__nav-text" href="./ingredients.html">Favorite ingredients</a>
           </li>
         </ul>
       </p>
     </nav>
   </div>
-
   <form class="header__form">
     <button type="submit" class="header__form-btn">
       <svg class="header__form-icon">
-        <use xlink:href="../../assets/icons/symbol-defs.svg#icon-search"></use>
+        <use xlink:href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-search"></use>
       </svg>
     </button>
     <input
@@ -144,16 +189,16 @@
   </div>
   <button class="header__modal-btn" type="button">
     <svg class="header__modal-open">
-      <use href="../../assets/icons/symbol-defs.svg#icon-menu"></use>
+      <use href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-menu"></use>
     </svg>
   </button>
 </header>
 
 <div class="header__modal is-hidden">
   <div class="header__modal-tablet">
-    <a href="../../index.html" class="header__home">
+    <a href="./index.html" class="header__home">
       <svg class="header__logo">
-        <use href="../../assets/icons/logo.svg#icon-logo"></use>
+        <use href="/cocktails-1/assets/logo-b8f608ff.svg#icon-logo"></use>
       </svg>
     </a>
     <div class="header__theme">
@@ -167,7 +212,7 @@
     </div>
     <button class="modal__header-close">
       <svg class="modal__icon">
-        <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+        <use href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-close"></use>
       </svg>
     </button>
   </div>
@@ -183,14 +228,14 @@
     </div>
     <button class="modal__header-close">
       <svg class="modal__icon">
-        <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
+        <use href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-close"></use>
       </svg>
     </button>
   </div>
   <form class="header__form">
     <button type="submit" class="header__form-btn">
       <svg class="header__form-icon">
-        <use href="../../assets/icons/symbol-defs.svg#icon-search"></use>
+        <use href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-search"></use>
       </svg>
     </button>
     <input
@@ -201,13 +246,13 @@
     />
   </form>
   <nav class="header__nav">
-    <a href="../../index.html" class="header__link">Home</a>
-    <a href="../../favorite.html" class="header__link"
+    <a href="./index.html" class="header__link">Home</a>
+    <a href="./favorite.html" class="header__link"
       >Favorite
       <span class="header__mobile-span">
         <svg class="header__modal-icon">
           <use
-            href="../../assets/icons/dropdown-arrow.svg#mdi-light:chevron-down"
+            href="/cocktails-1/assets/dropdown-arrow-dae66982.svg#mdi-light:chevron-down"
           ></use>
         </svg> </span
     ></a>
@@ -215,6 +260,12 @@
 </div>
 
     <main class="main">
+      <section class="err">
+  <div class="container">
+    <h2 class="err__title">Favorite cocktails</h2>
+    <h3 class="err__subtitle">You haven't added any favorite cocktails yet</h3>
+  </div>
+</section>
       <section class="favorite">
   <div class="container">
     <h2 class="favorite__title">Favorite cocktails</h2>
@@ -227,7 +278,7 @@
       <div class="pagination-box">
   <button class="previous-cocktail">
     <svg class="left-icon left-icon--empty">
-      <use href="../../assets/icons/arrow.svg#icon-arrow"></use>
+      <use href="/cocktails-1/assets/arrow-3f9aa8fd.svg#icon-arrow"></use>
     </svg>
   </button>
 
@@ -235,7 +286,7 @@
 
   <button class="next-cocktail">
     <svg class="right-icon">
-      <use href="../../assets/icons/arrow.svg#icon-arrow"></use>
+      <use href="/cocktails-1/assets/arrow-3f9aa8fd.svg#icon-arrow"></use>
     </svg>
   </button>
 </div>

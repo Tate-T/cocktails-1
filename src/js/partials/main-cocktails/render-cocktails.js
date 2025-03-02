@@ -1,5 +1,7 @@
 import { getPaginatedCocktails } from "../../services/get-cocktails-api";
 
+import iconsURL from "../../../assets/icons/symbol-defs.svg"
+
 export const renderCocktails = async (page) => {
   const list = document.querySelector(".cocktails");
 
@@ -23,10 +25,10 @@ export const renderCocktails = async (page) => {
             <button class="cocktails__add-favorite cocktails__add-favorite--styles">
               <span>Add to</span>
               <svg class="cocktails__icon cocktails__icon--white">
-                <use href="../../assets/icons/symbol-defs.svg#icon-white-heart"></use>
+                <use href="${iconsURL}#icon-white-heart"></use>
               </svg>
               <svg class="cocktails__icon cocktails__icon--black">
-                <use href="../../assets/icons/symbol-defs.svg#icon-black-heart"></use>
+                <use href="${iconsURL}#icon-black-heart"></use>
               </svg>
             </button>
           </div>

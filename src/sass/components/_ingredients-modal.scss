@@ -1,0 +1,32 @@
+
+
+.ingridients-modal {
+  height: 673px;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    height: 570px;
+    width: 715px;
+  }
+
+  &__box {
+    display: block;
+    padding: 40px 0 0 20px;
+
+    @media screen and (min-width: 768px) {
+      border-bottom: 1px solid #fd5103;
+      padding: 40px 28px;
+    }
+  }
+  
+  &__subtitle {
+    margin-top: 28px;
+    color: #202025;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}

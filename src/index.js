@@ -1,9 +1,11 @@
 import "normalize.css";
 
 import "./js/components/header/header.js";
+import "./js/components/header/search/search"
 import "./js/partials/hero/hero.js"
 import "./js/partials/main-cocktails/main-cocktails.js";
 import "./js/components/modal/modal.js";
+import "./js/components/ingredients-modal/ingredient-modal.js";
 import "./js/partials/hero/hero.js";
 import "./js/partials/cocktails/render-icons-local-storage.js";
 

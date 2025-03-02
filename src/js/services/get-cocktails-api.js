@@ -1,5 +1,3 @@
-import axios from "axios";
-
 function shuffleArray(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -9,24 +7,23 @@ function shuffleArray(arr) {
 }
 
 export const getCocktails = async () => {
-  return await axios
-    .get(
-      "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic",
-    )
-    .then(res => shuffleArray(res.data.drinks));
+  return await fetch(
+    "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic",
+  )
+    .then(res => res.json())
+    .then(res => res.drinks);
 };
 
 export const getPaginatedCocktails = async (page = 1) => {
   const drinksPerPage = 9;
   const startIndex = (page - 1) * drinksPerPage;
 
-  return await axios
-    .get(
-      "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic",
-    )
+  return await fetch(
+    "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic",
+  )
+    .then(res => res.json())
     .then(res => {
-      const drinks = res.data.drinks.slice(startIndex, startIndex + drinksPerPage);
-      console.log(drinks);
+      const drinks = res.drinks.slice(startIndex, startIndex + drinksPerPage);
 
       return drinks;
     });
