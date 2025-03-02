@@ -49,23 +49,24 @@ export const toggleTheme = () => {
 
 
 
-  themeChanger.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark-mode");
-    changeFromLocalStorage();
-
-    heroSourcesArr.forEach(source => {
-      if (source.media.includes("1280px")) {
-        source.srcset = `${imgDesktop}`;
-      } else if (source.media.includes("768px")) {
-        source.srcset = `${imgTablet}`;
-      } else {
-        source.srcset = `${imgMobile}`;
-      }
-    });
-  });
+  themeChangerArr.forEach(themeChanger => {
+    themeChanger.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark-mode");
+      changeFromLocalStorage();
   
-
-  updateIcons();
+      heroSourcesArr.forEach(source => {
+        if (source.media.includes("1280px")) {
+          source.srcset = "../../assets/images/desktop/dark-mode-fresh.webp";
+        } else if (source.media.includes("768px")) {
+          source.srcset = "../../assets/images/tablet/dark-mode-fresh.webp";
+        } else {
+          source.srcset = "../../assets/images/mobile/dark-mode-fresh.webp";
+        }
+      });
+  
+      updateIcons();
+    });
+  }) 
 };
 
 applyThemeOnLoad();
