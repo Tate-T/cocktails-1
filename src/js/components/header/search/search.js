@@ -2,6 +2,8 @@ import { renderIconsLocalStorage } from "../../../partials/cocktails/render-icon
 import { renderCocktails } from "../../../partials/main-cocktails/render-cocktails";
 import { getByName } from "../../../services/get-cocktail-name-api";
 
+import iconsURL from "../../../../assets/icons/symbol-defs.svg"
+
 const searchByName = () => {
   const input = document.querySelector(".header__form-input");
   const list = document.querySelector(".cocktails");
@@ -34,10 +36,10 @@ const searchByName = () => {
                 <button class="cocktails__add-favorite cocktails__add-favorite--styles">
                   <span>Add to</span>
                   <svg class="cocktails__icon cocktails__icon--white">
-                    <use href="../../assets/icons/symbol-defs.svg#icon-white-heart"></use>
+                    <use href="${iconsURL}#icon-white-heart"></use>
                   </svg>
                   <svg class="cocktails__icon cocktails__icon--black">
-                    <use href="../../assets/icons/symbol-defs.svg#icon-black-heart"></use>
+                    <use href="${iconsURL}#icon-black-heart"></use>
                   </svg>
                 </button>
               </div>

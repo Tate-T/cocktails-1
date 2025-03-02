@@ -1,5 +1,7 @@
 import _ from "lodash";
 
+import iconsURL from "../../../assets/icons/symbol-defs.svg";
+
 export const favoriteDrinks = [];
 
 export const renderFromLocalStorage = () => {
@@ -31,10 +33,10 @@ export const renderFromLocalStorage = () => {
               <button class="cocktails__remove-favorite cocktails__add-favorite--styles">
                 <span>Remove</span>
                 <svg class="cocktails__icon cocktails__icon--white">
-                  <use href="../../assets/icons/symbol-defs.svg#icon-full-heart"></use>
+                  <use href="${iconsURL}#icon-full-heart"></use>
                 </svg>
                 <svg class="cocktails__icon cocktails__icon--black">
-                  <use href="../../assets/icons/symbol-defs.svg#icon-full-heart"></use>
+                  <use href="${iconsURL}#icon-full-heart"></use>
                 </svg>
               </button>
             </div>

@@ -1,4 +1,5 @@
 import { isDarkMode } from "../../components/header/theme-changer";
+import iconsURL from "../../../assets/icons/symbol-defs.svg";
 
 export const likeCocktail = () => {
   document.addEventListener("click", e => {
@@ -12,7 +13,7 @@ export const likeCocktail = () => {
           const useElement = blackIcon.querySelector("use");
           if (useElement) {
             whiteIcon.classList.add("is-hidden");
-            useElement.setAttribute("href", "../../../assets/icons/symbol-defs.svg#icon-black-heart");
+            useElement.setAttribute("href", `${iconsURL}#icon-black-heart`);
             blackIcon.classList.remove("is-hidden");
           }
         }
@@ -27,7 +28,7 @@ export const likeCocktail = () => {
           const useElement = whiteIcon.querySelector("use");
           if (useElement) {
             blackIcon.classList.add("is-hidden"); 
-            useElement.setAttribute("href", "../../../assets/icons/symbol-defs.svg#icon-white-heart");
+            useElement.setAttribute("href", `${iconsURL}#icon-white-heart`);
             whiteIcon.classList.remove("is-hidden"); 
           }
         }
@@ -53,7 +54,7 @@ export const likeCocktail = () => {
           const useElement = blackIcon.querySelector("use");
           if (useElement) {
             whiteIcon.classList.add("is-hidden"); 
-            useElement.setAttribute("href", "../../../assets/icons/symbol-defs.svg#icon-full-heart");
+            useElement.setAttribute("href", `${iconsURL}#icon-full-heart`);
             blackIcon.classList.remove("is-hidden");
           }
         }
@@ -68,7 +69,7 @@ export const likeCocktail = () => {
           const useElement = whiteIcon.querySelector("use");
           if (useElement) {
             blackIcon?.classList.add("is-hidden"); 
-              useElement.setAttribute("href", "../../../assets/icons/symbol-defs.svg#icon-full-heart");
+              useElement.setAttribute("href", `${iconsURL}#icon-full-heart`);
               whiteIcon.classList.remove("is-hidden"); 
           }
         }
