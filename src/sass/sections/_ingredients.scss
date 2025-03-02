@@ -6,11 +6,11 @@ main{
   flex: 1;
 }
 
-.ingridients{
+.ingredients{
  min-height: 75vh;
 }
 
-.ingridients__title {
+.ingredients__title {
     color: #000;
     text-align: center;
     font-family: Poppins;
@@ -37,7 +37,7 @@ main{
       }
   }
   
-  .ingridients__cards-title {
+  .ingredients__cards-title {
     color: var(--Black, #202025);
     font-family: Roboto;
     font-size: 28px;
@@ -49,7 +49,7 @@ main{
     }
   }
   
-  .ingridients__cards-subtitle {
+  .ingredients__cards-subtitle {
     color: var(--Gray, #5f6775);
     font-family: Poppins;
     font-size: 14px;
@@ -62,7 +62,7 @@ main{
     }
   }
   
-  .ingridients__button-more {
+  .ingredients__button-more {
     width: 108px;
   height: 39px;
     border-radius: 4px;
@@ -87,7 +87,7 @@ main{
     }
   }
   
-  .ingridients__button-remove {
+  .ingredients__button-remove {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@ main{
     }
   }
   
-  .ingridients__cards {
+  .ingredients__cards {
     height: auto;
     flex-shrink: 0;
     border: 1px solid var(--Grapefruit, #fd5103);
@@ -129,7 +129,7 @@ main{
     }
   }
   
-  .ingridients__list {
+  .ingredients__list {
     display: flex;
     gap: 32px;
     margin-top: 60px;
@@ -139,12 +139,12 @@ main{
     flex-direction: row;
   }
   
-  .ingridients__button-box {
+  .ingredients__button-box {
     display: flex;
     gap: 16px;
   }
 
-  .ingridients__icon{
+  .ingredients__icon{
     width: 18px;
     height: 18px;   
 
