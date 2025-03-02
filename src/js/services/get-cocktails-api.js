@@ -24,7 +24,6 @@ export const getPaginatedCocktails = async (page = 1) => {
     .then(res => res.json())
     .then(res => {
       const drinks = res.drinks.slice(startIndex, startIndex + drinksPerPage);
-      console.log(drinks);
 
       return drinks;
     });
