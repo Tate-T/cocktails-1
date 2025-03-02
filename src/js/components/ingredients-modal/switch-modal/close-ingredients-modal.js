@@ -1,6 +1,6 @@
 export const closeIngModal = () => {
     const closeBtnArr = document.querySelectorAll(".modal__close");
-    const backdrop = document.querySelector(".ingridients-backdrop");
+    const backdrop = document.querySelector(".ingredients-backdrop");
     closeBtnArr.forEach(closeBtn => {
       closeBtn.addEventListener("click", () => {
         backdrop.classList.add("is-hidden");
