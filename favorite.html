@@ -17,9 +17,9 @@
     </script>
     <link rel="icon" href="/cocktails-1/assets/favicon-ec720e1e.ico" type="image/x-icon" />
     
-    <script type="module" crossorigin src="/cocktails-1/assets/favorite-ce6a017d.js"></script>
-    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/header-1d433156.js">
-    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/modal-b286250f.js">
+    <script type="module" crossorigin src="/cocktails-1/assets/favorite-cacf1941.js"></script>
+    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/header-343fe9c0.js">
+    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/modal-3daa5b56.js">
     <link rel="stylesheet" href="/cocktails-1/assets/header-9d9ae4af.css">
     <link rel="stylesheet" href="/cocktails-1/assets/favorite-9621b446.css">
   </head>
@@ -197,10 +197,9 @@
 <div class="header__modal is-hidden" >
   <div class="header__modal-tablet">
 
-    <a href="./index.html" class="header__home">
-      <svg class="header__logo">
-        <use href="/cocktails-1/assets/logo-f7260a8a.svg#icon-logo"></use>
-      </svg>
+    <a href="../../index.html" class="header__modal__home">
+      <svg class="header__modal__logo">
+        <use href="../../assets/icons/logo.svg#icon-logo"></use>
     </a>
     <div class="header__modal__theme">
       <p class="header__modal__theme-light">Light</p>
@@ -221,7 +220,7 @@
     <div class="header__modal__theme">
       <p class="header__modal__theme-light">Light</p>
       <label class="header__modal__theme-label">
-        <input type="checkbox" class="header__modal__theme-change " />
+        <input type="checkbox" class="header__modal__theme-change header__theme-change" />
         <span class="header__modal__theme-slider"></span>
       </label>
 
@@ -229,17 +228,16 @@
     </div>
 
 
-    <button class="modal__header-close">
-      <svg class="modal__icon">
-        <use href="/cocktails-1/assets/symbol-defs-bc6ac176.svg#icon-close"></use>
+    <button class="header__modal-close">
+      <svg class="header__modal-icon">
+        <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
   </div>
-  <form class="header__form">
-    <button type="submit" class="header__form-btn">
-      <svg class="header__form-icon">
-        <use href="/cocktails-1/assets/symbol-defs-bc6ac176.svg#icon-search"></use>
-
+  <form class="header__modal__form">
+    <button type="submit" class="header__modal__form-btn">
+      <svg class="header__modal__form-icon">
+        <use href="../../assets/icons/symbol-defs.svg#icon-search"></use>
       </svg>
     </button>
     <input
@@ -251,17 +249,23 @@
   </form>
 
 
-  <nav class="header__nav">
-    <a href="./index.html" class="header__link">Home</a>
-    <a href="./favorite.html" class="header__link"
-      >Favorite
-      <span class="header__mobile-span">
-        <svg class="header__modal-icon">
-          <use
-            href="/cocktails-1/assets/dropdown-arrow-0d0ebeb3.svg#mdi-light:chevron-down"
-          ></use>
-        </svg> </span
-    ></a>
+  <nav class="header__modal__nav">
+    <a href="../../index.html" class="header__modal__link">Home</a>
+    <p class="header__modal__link">
+      <span class="header__modal__nav-span">Favorite  <span class="header__nav-icon">
+        <svg class="header__arrow">
+          <use class="header__arrow-use" href="../../assets/icons/arrow.svg#icon-arrow"></use>
+        </svg>
+      </span></span>
+      <ul class="header__modal__nav-list is-hidden">
+        <li class="header__nav-item">
+          <a class="header__nav-text" href="../../favorite.html">Favorite cocktails</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-text" href="../../ingridients.html">Favorite ingredients</a>
+        </li>
+      </ul>
+    </p>
 
   </nav>
 </div>
