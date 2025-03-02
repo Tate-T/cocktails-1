@@ -1,4 +1,4 @@
-import"./modal-0a34013c.js";const i=()=>{const e=JSON.parse(localStorage.getItem("favorite-ingredients"));if(e&&e.length>0){e.forEach(t=>{});const n=document.querySelector(".ingredients__list");e.forEach(t=>{const s=`
+import"./modal-7642a63a.js";const i=()=>{const e=JSON.parse(localStorage.getItem("favorite-ingredients"));if(e&&e.length>0){e.forEach(t=>{});const n=document.querySelector(".ingredients__list");e.forEach(t=>{const s=`
         <li class="ingredients__cards" id="${t.idIngredient}">
           <h3 class="ingredients__cards-title">${t.strIngredient}</h3>
           <p class="ingredients__cards-subtitle">${t.strType||"Unknown"}</p>

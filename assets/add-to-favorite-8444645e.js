@@ -1,4 +1,4 @@
-import{_ as h,i as u}from"./modal-0a34013c.js";const d="/cocktails-1/assets/symbol-defs-bc6ac176.svg",n=[],v=()=>{const o=JSON.parse(localStorage.getItem("favorite-cocktails"));if(o!==null&&o.length!==0){o.forEach(i=>{n.push(i)});const s=document.querySelector(".cocktails");o.forEach(i=>{const e=`
+import{_ as h,i as u}from"./modal-7642a63a.js";const d="/cocktails-1/assets/symbol-defs-bc6ac176.svg",n=[],v=()=>{const o=JSON.parse(localStorage.getItem("favorite-cocktails"));if(o!==null&&o.length!==0){o.forEach(i=>{n.push(i)});const s=document.querySelector(".cocktails");o.forEach(i=>{const e=`
         <li class="cocktails__item" id="${i.idDrink}">
           <img
             src="${i.strDrinkThumb}"
