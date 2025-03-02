@@ -1,5 +1,5 @@
 export const openIngModal = () => {
-    const backdrop = document.querySelector(".ingridients-backdrop");
+    const backdrop = document.querySelector(".ingredients-backdrop");
 
     document.addEventListener("click", e => {
       if (e.target.classList.contains("modal__text")) {
