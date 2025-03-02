@@ -22,7 +22,7 @@ import{u as k}from"./header-343fe9c0.js";import{i,g as m,p,l as v,m as f}from"./
           </div>
         </div>
       </li>
-    `;o.insertAdjacentHTML("beforeend",s)})},g=async t=>{try{return{drinks:((await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${t}`).then(s=>s.json())).drinks||[]).filter(s=>s.strAlcoholic==="Non alcoholic")}}catch(o){return console.error(o),{drinks:[]}}},y=()=>{const t=document.querySelector(".header__form-input"),o=document.querySelector(".cocktails"),c=document.querySelector(".pagination-box");t.forEach(e=>{e.addEventListener("input",async()=>{if(console.log(e.value),e.value!==""){const s=await g(e.value).then(n=>n.drinks);o.innerHTML="",c.style.display="none",s.forEach(n=>{console.log(n);const r=`
+    `;o.insertAdjacentHTML("beforeend",s)})},g=async t=>{try{return{drinks:((await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${t}`).then(s=>s.json())).drinks||[]).filter(s=>s.strAlcoholic==="Non alcoholic")}}catch(o){return console.error(o),{drinks:[]}}},y=()=>{const t=document.querySelectorAll(".header__form-input"),o=document.querySelector(".cocktails"),c=document.querySelector(".pagination-box");t.forEach(e=>{e.addEventListener("input",async()=>{if(console.log(e.value),e.value!==""){const s=await g(e.value).then(n=>n.drinks);o.innerHTML="",c.style.display="none",s.forEach(n=>{console.log(n);const r=`
           <li class="cocktails__item" id="${n.idDrink}">
             <img
               src="${n.strDrinkThumb}"
