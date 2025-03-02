@@ -51,7 +51,7 @@
   </button>
 </header>
 
-<div class="header__modal">
+<div class="header__modal is-hidden" >
   <div class="header__modal-tablet">
     <a href="../../index.html" class="header__modal__home">
       <svg class="header__modal__logo">
@@ -61,30 +61,30 @@
     <div class="header__modal__theme">
       <p class="header__modal__theme-light">Light</p>
       <label class="header__modal__theme-label">
-        <input type="checkbox" class="header__modal__theme-change" />
+        <input type="checkbox" class="header__modal__theme-change header__theme-change" />
         <span class="header__modal__theme-slider"></span>
       </label>
 
       <p class="header__modal__theme-dark">Dark</p>
     </div>
-    <button class="modal__header__modal-close">
+    <button class="header__modal-close">
       <svg class="modal__icon">
         <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
   </div>
-  <div class="header__modal__modal-mobile">
+  <div class="header__modal-mobile">
     <div class="header__modal__theme">
       <p class="header__modal__theme-light">Light</p>
       <label class="header__modal__theme-label">
-        <input type="checkbox" class="header__modal__theme-change" />
+        <input type="checkbox" class="header__modal__theme-change " />
         <span class="header__modal__theme-slider"></span>
       </label>
 
       <p class="header__modal__theme-dark">Dark</p>
     </div>
-    <button class="header__modal__modal-close">
-      <svg class="modal__icon">
+    <button class="header__modal-close">
+      <svg class="header__modal-icon">
         <use href="../../assets/icons/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
@@ -104,9 +104,13 @@
   </form>
   <nav class="header__modal__nav">
     <a href="../../index.html" class="header__modal__link">Home</a>
-    <p class="header-modal__link">
-      <span class="header__nav-span">Favorite</span>
-      <ul class="header__nav-list is-hidden">
+    <p class="header__modal__link">
+      <span class="header__modal__nav-span">Favorite  <span class="header__nav-icon">
+        <svg class="header__arrow">
+          <use class="header__arrow-use" href="../../assets/icons/arrow.svg#icon-arrow"></use>
+        </svg>
+      </span></span>
+      <ul class="header__modal__nav-list is-hidden">
         <li class="header__nav-item">
           <a class="header__nav-text" href="../../favorite.html">Favorite cocktails</a>
         </li>

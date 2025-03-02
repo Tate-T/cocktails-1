@@ -37,7 +37,27 @@
       }
     }
   }
+  &__arrow{
+    fill: #FCFCFC;
+  }
+  &__modal{
+    background-color: #202025;
+    &-close{
+      fill: #FCFCFC;
+      background-color: #202025;
+    }
+    &__theme-light{
+      color: #fcfcfc;
 
+    }
+    &__nav-span{
+      color: #FCFCFC;
+    }
+    &__theme-dark{
+      color: #fd5103;
+
+    }
+  }
   &__form {
     &-input {
       background-color: #202025;
