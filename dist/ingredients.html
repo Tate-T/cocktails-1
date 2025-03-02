@@ -16,12 +16,9 @@
       })();
     </script>
     <link rel="icon" href="/cocktails-1/assets/favicon-ec720e1e.ico" type="image/x-icon" />
-    
-    <script type="module" crossorigin src="/cocktails-1/assets/favorite-c8731e90.js"></script>
-    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/header-7e68b570.js">
-    <link rel="modulepreload" crossorigin href="/cocktails-1/assets/modal-2ce7dd6c.js">
+    <link rel="stylesheet" href="./sass/ingridients.scss" />
+    <script type="module" crossorigin src="/cocktails-1/assets/header-7e68b570.js"></script>
     <link rel="stylesheet" href="/cocktails-1/assets/header-9d9ae4af.css">
-    <link rel="stylesheet" href="/cocktails-1/assets/favorite-57db942a.css">
   </head>
   <body>
     <div class="backdrop is-hidden">
@@ -260,17 +257,56 @@
 </div>
 
     <main class="main">
-      <section class="err">
+      <!-- ТЕСТОВА РОЗМІТКА БЕЗ JS -->
+<section class="ingredients">
   <div class="container">
-    <h2 class="err__title">Favorite cocktails</h2>
-    <h3 class="err__subtitle">You haven't added any favorite cocktails yet</h3>
-  </div>
-</section>
-      <section class="favorite">
-  <div class="container">
-    <h2 class="favorite__title">Favorite cocktails</h2>
-
-    <ul class="cocktails">
+    <h2 class="ingredients__title">Favorite ingredients</h2>
+    <ul class="ingredients__list">
+      <li class="ingredients__cards">
+        <h3 class="ingredients__cards-title">Campari</h3>
+        <p class="ingredients__cards-subtitle">LIQUEUR</p>
+        <div class="ingredients__button-box">
+          <button class="ingredients__button-more">Learn More</button>
+          <button class="ingredients__button-remove">
+            Remove
+            <svg class="ingredients__icon">
+              <use
+                href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-full-heart"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="ingredients__cards">
+        <h3 class="ingredients__cards-title">Blanco tequila</h3>
+        <p class="ingredients__cards-subtitle">DISTILLED BEVERAGE</p>
+        <div class="ingredients__button-box">
+          <button class="ingredients__button-more">Learn More</button>
+          <button class="ingredients__button-remove">
+            Remove
+            <svg class="ingredients__icon">
+              <use
+                href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-full-heart"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="ingredients__cards">
+        <h3 class="ingredients__cards-title">Vermouth</h3>
+        <p class="ingredients__cards-subtitle">FORTIFIED WINE</p>
+        <div class="ingredients__button-box">
+          <button class="ingredients__button-more">Learn More</button>
+          <button class="ingredients__button-remove">
+            Remove
+            <svg class="ingredients__icon">
+              <use
+                href="/cocktails-1/assets/symbol-defs-b233ebc0.svg#icon-full-heart"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
