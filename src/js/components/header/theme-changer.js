@@ -56,11 +56,11 @@ export const toggleTheme = () => {
   
       heroSourcesArr.forEach(source => {
         if (source.media.includes("1280px")) {
-          source.srcset = "./assets/images/desktop/dark-mode-fresh.webp";
+          source.srcset = "/assets/images/desktop/dark-mode-fresh.webp";
         } else if (source.media.includes("768px")) {
-          source.srcset = "./assets/images/tablet/dark-mode-fresh.webp";
+          source.srcset = "/assets/images/tablet/dark-mode-fresh.webp";
         } else {
-          source.srcset = "./assets/images/mobile/dark-mode-fresh.webp";
+          source.srcset = "/assets/images/mobile/dark-mode-fresh.webp";
         }
       });
   
