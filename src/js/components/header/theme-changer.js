@@ -15,12 +15,15 @@ const changeFromLocalStorage = () => {
 };
 
 const updateThemeSwitch = () => {
-  const themeChanger = document.querySelector(".header__theme-change");
+  const themeChangerArr = document.querySelectorAll(".header__theme-change");
 
-  if (themeChanger) {
+  themeChangerArr.forEach(themeChanger => {
+    if (themeChanger) {
     const isDark = isDarkMode();
     themeChanger.checked = isDark;
   }
+  });
+  
 };
 
 const applyThemeOnLoad = () => {
@@ -41,8 +44,10 @@ const applyThemeOnLoad = () => {
 };
 
 export const toggleTheme = () => {
-  const themeChanger = document.querySelector(".header__theme-change");
+  const themeChangerArr = document.querySelectorAll(".header__theme-change");
   const heroSourcesArr = document.querySelectorAll("source");
+
+
 
   themeChanger.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark-mode");
@@ -57,9 +62,8 @@ export const toggleTheme = () => {
         source.srcset = `${imgMobile}`;
       }
     });
-
-    updateIcons();
   });
+  
 
   updateIcons();
 };
